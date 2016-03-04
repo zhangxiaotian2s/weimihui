@@ -11,35 +11,35 @@
 		<div class="indextop">
 			<div class="header">
 				<div class="logo-left">
-					<img src="images/logo.png"  > 维蜜会
+					<img src="images/logo.png"> 维蜜会
 				</div>
 			</div>
 			<div class="header_box">
 				<h1>真实远比虚拟更加精彩</h1>
 				<div class="logotext clearfix">
-					<img src="images/logo.png" >
+					<img src="images/logo.png">
 					<h2>维蜜会 真实社交</h2>
 				</div>
 				<ul class="downbtnul clearfix">
-					<li>
-						<a href=""><img src="images/iso.png" class="img-responsive"></a>
+					<li class="fade-bottom-in ">
+						<a href="" ><img src="images/iso.png" class="img-responsive"></a>
 					</li>
-					<li>
-						<a href=""><img src="images/android.png" class="img-responsive"></a>
+					<li class="fade-bottom-in delay1000">
+						<a href="" ><img src="images/android.png" class="img-responsive"></a>
 					</li>
 				</ul>
 			</div>
-			<div class="phoneimg"><img src="images/phone.png" class="img-responsive"></div>
+			<div class="phoneimg  fade-bottom-in "><img src="images/phone.png" class="img-responsive"></div>
 		</div>
 		<section class="indexcontent clearfix">
 			<header>
-				<h2>幻想无数   不如动次真格</h2>
+				<h2 id="indexcontent_title">幻想无数   不如动次真格</h2>
 				<p>北京微饭科技有限公司创立于2015年中，是一款只针对优质人群的社交APP-”维蜜会”。商业大咖、明星模特、优质
 					<br>文青、地主土豪都在这里。微饭目前已经获得数万美金的天使投资，在2016年全面开始运营推广。</p>
 			</header>
 			<div class="indexconentnr">
 				<div class="left">
-					<figure>
+					<figure class="figureone vhide op0hide delay500">
 						<img src="images/img01.jpg" class="img-responsive">
 						<figcaption>
 							<h3>真实的社交</h3>
@@ -48,25 +48,25 @@
 					</figure>
 				</div>
 				<div class="center">
-					<figure>
+					<figure class="figureone vhide op0hide">
 						<img src="images/img02.jpg" class="img-responsive">
 						<figcaption>
 							<h3>各种各样的聚会</h3>
 							<p>让你知道多彩的生活居然离你如此之近。</p>
 						</figcaption>
 					</figure>
-					<figure>
-						<img src="images/img03.jpg" class="img-responsive" >
+					<figure class="figureone vhide op0hide delay1000">
+						<img src="images/img03.jpg" class="img-responsive">
 						<figcaption>
 							<h3>找到最对口味的人</h3>
 							<p>共同的爱好、共同的兴趣。聚在一起只有相见恨晚</p>
 						</figcaption>
 					</figure>
-					
+
 				</div>
 				<div class="right">
-					<figure>
-						<img src="images/img04.jpg"  class="img-responsive">
+					<figure class="figureone vhide op0hide delay500">
+						<img src="images/img04.jpg" class="img-responsive">
 						<figcaption>
 							<h3>前所未有的乐趣</h3>
 							<p>待在家里，你的好得不到任何真实的回馈。出来聚会，你会找到前所未有的乐趣。</p>
@@ -83,9 +83,23 @@
 		</footer>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-           			
- 			
+			$(document).ready(function() {
+				var titletop = $('#indexcontent_title').offset().top;
+					$(window).scroll(function() {
+						if ($(this).scrollTop() > titletop) {
+                                 $('.figureone').removeClass('vhide')
+                                 $('.figureone').addClass('small-in')
+							$(this).unbind('scroll');//达到条件解除监听事件
+						}
+					})
+
+			})
 		</script>
+		     <!--[if lt IE 8]> 
+               <script>
+			      $('.figureone').removeClass('vhide op0hide')
+			  </script>
+			<![endif]-->
 	</body>
 
 </html>
