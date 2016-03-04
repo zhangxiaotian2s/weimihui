@@ -8,6 +8,9 @@ height: 0;
 clear: both; 
 visibility: hidden;
 }
+img{-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -ms-transition: all 1s; -o-transition: all 1s ease; transition: all 1s ease ;}
+
+.img-responsive{ display: block;max-width: 100%;height: auto; margin: auto;}
 .indextop{ width: 100%;  height: 890px; overflow: hidden; background: url(../images/bk.jpg) no-repeat fixed; background-size: cover; background-position:center ; position: relative;}
 .indextop .header{ width: 100%; height: 100px; padding: 20px;}
 .indextop .header nav{ height: 100px; padding: 20px; position: absolute; right: 0px; top: 0px;}
@@ -18,10 +21,10 @@ visibility: hidden;
 .indextop .header nav ul li:last-of-type a{ border-right: none;}
 .logo-left img{ display: block; float: left; margin-right: 20px;}
 .logo-left{ font-size: 36px; line-height: 100px;  color: #ffffff;}
-
+.logo-left img{ width: 100px; height: 100px;}
 
 .phoneimg{ width: 405px; height: 737px; position: absolute; left: 50%; margin-left:-600px ; bottom: 0px;}
-
+.phoneimg .img{  width: 405px;}
 .header_box{ width: 660px;height: 737px; position: absolute; left: 50%; bottom: 0px; }
 .header_box h1{ line-height: 240px; font-size: 60px; color: #FFFFFF; font-weight: normal;}
 .header_box  .logotext img{ display: block; float: left; margin-right: 20px; }
@@ -43,14 +46,34 @@ visibility: hidden;
 .indexconentnr figure img{-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -ms-transition: all 1s; -o-transition: all 1s ease; transition: all 1s ease ;}
 .indexconentnr figure img:hover{transform: translateY(20px) scale(0.95);}
 .indexconentnr figcaption h3{font-size: 36px; text-align: center; color: #bbbbbb; font-weight: normal; line-height: 100px;}
-.indexconentnr figcaption  p{ font-size: 20px; color: #ff724a; text-align: center;}
+.indexconentnr figcaption  p{ font-size: 20px; color: #ff9668; text-align: center;}
 .indexconentnr .center{ width: 300px; margin:0px 135px; float: left;}
 
-.indexbottom{  width: 100%;background: #3b3769; padding: 70px 0px 40px;}
+.indexbottom{  width: 100%;background: #507dc4; padding: 70px 0px 40px;}
 
 .indexbottom p{ text-align: center; line-height: 40px; color: #FFFFFF;font-size: 18px;}
 
 
-
+@media only screen and (max-width: 1440px)   {
+	.indextop{ height: 667px;}
+	.header_box{ height:602px ;}
+	.header_box h1{ line-height: 240px; font-size: 48px; }
+	.logotext img{ width: 105px; }
+	.header_box  .logotext  h2{line-height: 105px; font-size: 36px; }
+	.logo-left { line-height: 75px;}
+	.logo-left img{  width: 75px; height: 75px;}
+	.phoneimg { width: 303px;height: 552px; margin-left: -400px;}
+	.phoneimg img{ width: 303px; height: 552px;}
+	.downbtnul  li{ width: 180px;}
+  .indexcontent{ width: 1000px}
+	.indexcontent header h2{ line-height: 100px;font-size: 36px} 
+   .indexcontent header p {font-size:16px ; }
+   .indexconentnr .left,.indexconentnr .right{ width: 225px; float: left; padding-top: 280px;}
+   .indexconentnr .center{ width: 225px; margin:0px 162px; float: left;}
+   .indexconentnr figure img:hover{transform: translateY(20px) scale(0.95);}
+   .indexconentnr figcaption h3{font-size: 28px; line-height: 75px;}
+   .indexconentnr figcaption  p{ font-size: 16px; }
+   .indexbottom p{ font-size: 14px;}
+}
 
 
