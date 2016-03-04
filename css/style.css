@@ -51,7 +51,7 @@ img{-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -ms-transitio
 
 .indexbottom{  width: 100%;background: #507dc4; padding: 70px 0px 40px;}
 
-.indexbottom p{ text-align: center; line-height: 40px; color: #FFFFFF;font-size: 18px;}
+.indexbottom p{ text-align: center; line-height: 40px; color: #FFFFFF;font-size: 16px;}
 
 
 @media only screen and (max-width: 1440px)   {
@@ -73,7 +73,7 @@ img{-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -ms-transitio
    .indexconentnr figure img:hover{transform: translateY(20px) scale(0.95);}
    .indexconentnr figcaption h3{font-size: 28px; line-height: 75px;}
    .indexconentnr figcaption  p{ font-size: 16px; }
-   .indexbottom p{ font-size: 14px;}
+   .indexbottom p{ font-size: 12px;}
 }
 
 
