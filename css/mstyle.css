@@ -1,0 +1,144 @@
+*{margin: 0; padding: 0; font-family:Arial,Verdana,Sans-serif;
+   /*处理BUG*/
+    -webkit-tap-highlight-color: transparent;  
+    -webkit-appearance: none;   
+    }
+a{ text-decoration: none;}
+li{ list-style: none;}
+a:hover{
+  
+}
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;}
+input{outline: none;}
+/*全局设置字号*/
+html{font-size:10px}
+@media screen and (min-width:320px) and (max-width:375px){html{font-size:13px}}
+@media screen and (min-width:375px) and (max-width:415px){html{font-size:15px}}
+@media screen and (min-width:415px) {html{font-size:17px}}
+/*开启硬件加速*/
+.Ac{
+   -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+   
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+   backface-visibility: hidden;
+ 
+   -webkit-perspective: 1000;
+   -moz-perspective: 1000;
+   -ms-perspective: 1000;
+   perspective: 1000;
+}
+/*常用配置*/
+.wrap{ max-width: 640px;width: 100%; margin: auto; overflow: hidden;}
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+.clear{clear: both;}
+.img-responsive{ display: block;max-width: 100%;height: auto; margin: auto;}
+.img-circle{border-radius:50%}
+.text-left{text-align:left}
+.text-right{text-align:right}
+.text-center{text-align:center}
+.row {
+  width: 100%;
+  clear: both;
+}
+.red_error{border:#ff0000 solid 1px!important;color:#ff0000!important;}
+.blank0{ height: 0rem;clear: both; overflow: hidden;}
+.blank1{ height: 1rem;clear: both; overflow: hidden;}
+.blank2{ height: 2rem;clear: both; overflow: hidden;}
+.blank3{ height: 3rem;clear: both; overflow: hidden;}
+.blank4{ height: 4rem;clear: both; overflow: hidden;}
+.bk_white{ background: #FFFFFF;}
+.bk_gray{ background: #f6f6f6;}
+.bk_gray2{background:#f7f3f1 ;}
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9
+{float:left}
+.col-xs-12{width:100%}
+.col-xs-11{width:91.66666667%}
+.col-xs-10{width:83.33333333%}
+.col-xs-9{width:75%}
+.col-xs-8{width:66.66666667%}
+.col-xs-7{width:58.33333333%}
+.col-xs-6{width:50%}
+.col-xs-5{width:41.66666667%}
+.col-xs-4{width:33.33333333%}
+.col-xs-3{width:25%}
+.col-xs-2{width:16.66666667%}
+.col-xs-1{width:8.33333333%}
+.col-xs-offset-12 {margin-left: 100%;}
+.col-xs-offset-11 {margin-left: 91.66666667%;}
+.col-xs-offset-10 {margin-left: 83.33333333%;}
+.col-xs-offset-9 {margin-left: 75%;}
+.col-xs-offset-8 {margin-left: 66.66666667%;}
+.col-xs-offset-7 {margin-left: 58.33333333%;}
+.col-xs-offset-6 {margin-left: 50%;}
+.col-xs-offset-5 {margin-left: 41.66666667%;}
+.col-xs-offset-4 {margin-left: 33.33333333%;}
+.col-xs-offset-3 {margin-left: 25%;}
+.col-xs-offset-2 {margin-left: 16.66666667%;}
+.col-xs-offset-1 {margin-left: 8.33333333%;}
+.col-xs-offset-0 {margin-left: 0;}
+
+@font-face {font-family: "iconfont";
+  src:  url('../fonts/iconfont.ttf') format('truetype');/* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-jiahao1:before { content: "\e600"; }
+.icon-down1:before { content: "\e601"; }
+.icon-down2:before { content: "\e602"; }
+.icon-down3:before { content: "\e603"; }
+.icon-left:before { content: "\e605"; }
+.icon-jiahao2:before { content: "\e604"; }
+.icon-dian:before { content: "\e606"; }
+.icon-right:before { content: "\e607"; }
+
+
+/**/
+
+
+.mtop{ background: url(../images/mbkimg.jpg) no-repeat center; background-size: cover; height: auto; position: relative; overflow: hidden;}
+.mtop_logo{width: 48%; margin: auto; -webkit-transform: scale(0,0);}
+
+.mtop_phone{ width: 56%; overflow: hidden; margin: auto;-webkit-transform:translateY(200px) scale(0,0); transform: translateY(200px) scale(0,0); }
+.mcontent header h1{ font-size:1.6rem ; text-align: center; font-weight:normal ;  line-height: 3.6rem;  color: #666666;}
+ .mcontent header p{ font-size: 0.9rem; text-align: center; line-height: 1.6rem; color: #a1a1a1;}
+
+.Carousel,.Carousel_box{ position: relative;}
+.Carousel_box{ width: 55%; margin: auto;}
+.Carousel_box ul li{ position: absolute; top: 0px; left: 0px; opacity: 0;}
+.Carousel_box ul li:first-of-type{ z-index: 5;opacity: 1;}
+
+.Carousel span.btn{ font-size: 3rem; color: #dddddd; position: absolute;}
+.Carousel  span.leftbtn{ left: 0.5rem; top: 7rem;}
+.Carousel  span.rigitbtn{ right: 0.5rem; top: 7rem;}
+.dianbox {width: 8.8rem; margin: auto;}
+.dianbox ul li{ float: left; margin: 0.5rem;}
+.dianbox ul li.current span{ color: #FF5129;}
+.dianbox ul li span{ font-size:1.2rem ; width: 1.2rem; height: 1.2rem; display: block;}
+.Carousel h2{text-align: center; font-weight: normal; color: #ff5129; font-size: 1.4rem;}
+
+.fixedfooter{position: fixed; bottom: 0px; left: 0px; z-index: 99;}
+
+.wxtsbk{ width: 100%; height: 100%; position: fixed; top: 0px; left: 0px;z-index: 100;}
+.wxtsbkbox{ height: 100%; width: 100%; background: #000; opacity: 0.6;}
+.wxtsbkbox img{ width: 80%; float: right;}
+.tsimg{ position: fixed; top: 0px;  width: 20rem; right: 0px; z-index: 100;}
+
+

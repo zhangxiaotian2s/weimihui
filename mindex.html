@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>维蜜会</title>
+		<link rel="stylesheet" type="text/css" href="css/mstyle.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<span class="Ac"></span>
+			<header class="mtop row">
+				<div class="blank1"></div>
+				<div class="mtop_logo" id="mtop_logo">
+					<img src="images/mlogoimg.png" class="img-responsive">
+				</div>
+				<div class="blank2"></div>
+				<div class="mtop_phone" id="mtop_phone">
+					<img src="images/mphone.png" class="img-responsive" />
+				</div>
+			</header>
+
+			<section class="mcontent">
+				<div class="blank1"></div>
+				<header>
+					<h1>幻想无数   不如动次真格</h1>
+					<p>不知从何时开始
+						<br /> 我们的社交变成了人与屏幕的交流
+						<br /> 我们幻想着和屏幕那头的人如何精彩的相聚
+						<br />但是手机中的很多人
+						<br /> 我们却从未谋面
+					</p>
+				</header>
+				<div class="blank2"></div>
+               <div class="Carousel">
+               	   <div class="Carousel_box">
+               	   	<img src="images/c_bk.jpg"   alt=""  class="img-responsive" />
+               	      <ul id="Carouselul">
+               	      	<li><img src="images/mimg01.jpg"   alt=""  class="img-responsive" /></li>
+               	      	<li><img src="images/mimg02.jpg"  alt=""  class="img-responsive" /></li>
+               	      	<li><img src="images/mimg03.jpg"  alt="" class="img-responsive" /></li>
+               	      	<li><img src="images/mimg04.jpg"  alt="" class="img-responsive" /></li>
+               	      </ul>
+               	   </div>
+               	   <span class="btn leftbtn iconfont icon-left" id="leftbtn"></span>
+               	    <span class="btn rigitbtn iconfont icon-right" id="rightbtn"></span>
+               	    <div class="dianbox">
+               	    	  <ul id="danul">
+               	    	  	<li class="current"><span class="iconfont icon-dian"></span></li>
+               	    	  	<li><span class="iconfont icon-dian"></span></li>
+               	    	  	<li><span class="iconfont icon-dian"></span></li>
+               	    	  	<li><span class="iconfont icon-dian"></span></li>
+               	    	  </ul>
+               	    </div>
+               	    <div class="blank0"></div>
+               	    <h2  id="carouseltitle" ></h2>
+               	<div class="blank2"></div>
+               </div>
+			</section>
+
+		</div>
+		 	<div class="blank2"></div>
+		 	 	<div class="blank2"></div>
+		 <footer class="fixedfooter openapp"> <img src="images/m_fixedbottom.png" class="img-responsive"></footer>
+		
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/mCarousel.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/gotoapp.js" ></script>
+		<script>
+			window.onload = function() {
+				var logo = document.getElementById('mtop_logo')
+				var mtop_phone = document.getElementById('mtop_phone')
+				logo.style.webkitTransition = '0.5s';
+				mtop_phone.style.webkitTransition = '1s';
+				logo.style.webkitTransform = 'scale(1.05,1.05)';
+				mtop_phone.style.webkitTransform = 'translateY(0px) scale(1,1)';
+				var gt = new goToApp()
+			     gt.init('.openapp',false)
+			     var carousel=new Carousel()
+				carousel.init()
+			}
+				
+		</script>
+	</body>
+
+</html>
