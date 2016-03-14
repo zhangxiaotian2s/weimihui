@@ -4,7 +4,28 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>维蜜会</title>
+		<script>
+			function IsPC() {
+				var userAgentInfo = navigator.userAgent;
+				var Agents = ["Android", "iPhone",
+					"SymbianOS", "Windows Phone",
+					"iPad", "iPod"
+				];
+				var flag = true;
+				for (var v = 0; v < Agents.length; v++) {
+					if (userAgentInfo.indexOf(Agents[v]) > 0) {
+						flag = false;
+						break;
+					}
+				}
+				return flag;
+			}
+			if (!IsPC()) {
+				window.location.href = 'http://127.0.0.1:8020/weimihui/mindex.html'
+			}
+		</script>
 		<link rel="stylesheet" href="css/style.css" />
+
 	</head>
 
 	<body>
@@ -22,10 +43,10 @@
 				</div>
 				<ul class="downbtnul clearfix">
 					<li class="fade-bottom-in ">
-						<a href="" ><img src="images/iso.png" class="img-responsive"></a>
+						<a href=""><img src="images/iso.png" class="img-responsive"></a>
 					</li>
 					<li class="fade-bottom-in delay1000">
-						<a href="" ><img src="images/android.png" class="img-responsive"></a>
+						<a href=""><img src="images/android.png" class="img-responsive"></a>
 					</li>
 				</ul>
 			</div>
@@ -85,21 +106,21 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var titletop = $('#indexcontent_title').offset().top;
-					$(window).scroll(function() {
-						if ($(this).scrollTop() > titletop) {
-                                 $('.figureone').removeClass('vhide')
-                                 $('.figureone').addClass('small-in')
-							$(this).unbind('scroll');//达到条件解除监听事件
-						}
-					})
-
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > titletop) {
+						$('.figureone').removeClass('vhide')
+						$('.figureone').addClass('small-in')
+						$(this).unbind('scroll'); //达到条件解除监听事件
+					}
+				})
 			})
 		</script>
-		     <!--[if lt IE 8]> 
+		<!--[if lt IE 8]> 
                <script>
 			      $('.figureone').removeClass('vhide op0hide')
 			  </script>
 			<![endif]-->
+
 	</body>
 
 </html>
