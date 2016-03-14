@@ -137,11 +137,13 @@ visibility: hidden;
 .mfooter{width: 100%; background: #507dc4;} 
 .mfooter p{ line-height: 2.0rem; text-align: center; color: #FFFFFF; font-size: 0.9rem;}
 
-.fixedfooter{position: fixed; bottom: 0px; left: 0px; z-index: 99;}
-
+.fixedfooter{position: fixed; bottom: 0px; left:0px; z-index: 99; width: 100%; background: #FFFFFF; opacity: 0.9; }
+.fixedfooter img{ margin: auto; display: block; }
 .wxtsbk{ width: 100%; height: 100%; position: fixed; top: 0px; left: 0px;z-index: 100;}
 .wxtsbkbox{ height: 100%; width: 100%; background: #000; opacity: 0.6;}
 .wxtsbkbox img{ width: 80%; float: right;}
 .tsimg{ position: fixed; top: 0px;  width: 20rem; right: 0px; z-index: 100;}
-
+@media only screen and (min-width:640px ) {
+	.mfooter{ padding-bottom: 40px;}
+}
 
